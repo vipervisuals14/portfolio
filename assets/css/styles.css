@@ -153,7 +153,7 @@ a { color: inherit; text-decoration: none; }
 .site-menu a.menu-link small {
   font-family: var(--mono);
   font-weight: 300;
-  font-size: 0.65rem;
+  font-size: 0.55rem;
   letter-spacing: 0.2em;
   color: var(--muted);
 }
@@ -215,7 +215,7 @@ main { flex: 1; }
   text-align: center;
   font-family: var(--mono);
   font-weight: 300;
-  font-size: clamp(0.68rem, 0.95vw, 0.85rem);
+  font-size: clamp(0.58rem, 0.8vw, 0.72rem);
   letter-spacing: 0.09em;
   color: var(--ink);
 }
@@ -240,7 +240,7 @@ main { flex: 1; }
   padding: clamp(18px, 3vh, 26px) var(--gutter);
   font-family: var(--mono);
   font-weight: 300;
-  font-size: clamp(0.68rem, 0.95vw, 0.85rem);
+  font-size: clamp(0.58rem, 0.8vw, 0.72rem);
   letter-spacing: 0.1em;
 }
 
@@ -323,7 +323,7 @@ main { flex: 1; }
   max-width: 64ch;
   font-family: var(--mono);
   font-weight: 300;
-  font-size: clamp(0.7rem, 1vw, 0.85rem);
+  font-size: clamp(0.6rem, 0.85vw, 0.75rem);
   letter-spacing: 0.08em;
   line-height: 1.9;
   color: var(--muted);
@@ -374,7 +374,7 @@ main { flex: 1; }
   margin-top: 12px;
   font-family: var(--mono);
   font-weight: 300;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   letter-spacing: 0.1em;
 }
 .video-meta .v-title { color: var(--ink); }
@@ -385,7 +385,7 @@ main { flex: 1; }
   display: flex; gap: 10px 22px; flex-wrap: wrap;
   padding: 0 var(--gutter) clamp(20px, 3vh, 32px);
   font-family: var(--mono); font-weight: 300;
-  font-size: 0.72rem; letter-spacing: 0.14em;
+  font-size: 0.62rem; letter-spacing: 0.14em;
 }
 .filter-row button {
   background: none; border: 0; cursor: pointer;
@@ -447,7 +447,7 @@ main { flex: 1; }
 }
 .contact-info p {
   font-family: var(--mono); font-weight: 300;
-  font-size: 0.78rem; letter-spacing: 0.1em;
+  font-size: 0.68rem; letter-spacing: 0.1em;
   line-height: 2.1; color: var(--muted);
 }
 .contact-info a { color: var(--ink); border-bottom: 1px solid var(--line); transition: color .2s ease, border-color .2s ease; }
@@ -457,7 +457,7 @@ main { flex: 1; }
 .field label {
   display: block;
   font-family: var(--mono); font-weight: 300;
-  font-size: 0.68rem; letter-spacing: 0.18em;
+  font-size: 0.6rem; letter-spacing: 0.18em;
   color: var(--muted);
   margin-bottom: 8px;
 }
@@ -469,7 +469,7 @@ main { flex: 1; }
   color: var(--ink);
   font-family: var(--mono);
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 10px 2px;
@@ -480,7 +480,7 @@ main { flex: 1; }
 
 .form-note {
   font-family: var(--mono); font-weight: 300;
-  font-size: 0.7rem; letter-spacing: 0.1em;
+  font-size: 0.62rem; letter-spacing: 0.1em;
   color: var(--accent);
   min-height: 1.2em;
 }
@@ -512,7 +512,7 @@ main { flex: 1; }
   background: none; border: 0; cursor: pointer;
   color: var(--ink);
   font-family: var(--mono); font-weight: 300;
-  font-size: 0.75rem; letter-spacing: 0.2em;
+  font-size: 0.65rem; letter-spacing: 0.2em;
 }
 .modal-close:hover { color: var(--accent); }
 
