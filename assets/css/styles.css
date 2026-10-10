@@ -362,6 +362,28 @@ main {
 }
 
 /* ------------------------------------------------------------
+   SECTION NAV — inner pages mirror the homepage cards
+   ------------------------------------------------------------ */
+.section-nav {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(10px, 1.2vw, 18px);
+  padding: var(--top-gap) var(--gutter) clamp(8px, 1.4vh, 14px);
+}
+.section-nav .card-media {
+  flex: none;
+  height: clamp(72px, 15vh, 150px);
+}
+.section-nav .card-title {
+  bottom: 8px;
+  left: clamp(8px, 1vw, 12px);
+  font-size: clamp(0.85rem, 1.7vw, 1.4rem);
+}
+.section-nav .card-desc { padding: 6px 2px 0; }
+.section-nav a.page-card[aria-current="page"] .card-title { color: var(--accent); }
+
+/* ------------------------------------------------------------
    INNER PAGES — compact hero + horizontal strips
    ------------------------------------------------------------ */
 .page-hero {
@@ -609,5 +631,7 @@ main {
 @media (max-width: 860px) {
   .pages-grid { display: flex; overflow-x: auto; overflow-y: hidden; }
   .page-card { flex: 0 0 78vw; }
+  .section-nav .card-media { height: clamp(58px, 11vh, 96px); }
+  .section-nav .card-title { bottom: 6px; left: 8px; font-size: clamp(0.72rem, 3.2vw, 1rem); }
   .status-bar { flex-direction: column; align-items: center; gap: 10px; padding: 12px var(--gutter); }
 }
