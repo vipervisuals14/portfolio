@@ -168,3 +168,39 @@
     grid.hidden = false;
   });
 })();
+
+/* video page: category cards open their filtered strip */
+(function () {
+  var catGrid = document.querySelector('.cat-grid');
+  var catView = document.querySelector('.cat-view');
+  if (!catGrid || !catView) return;
+  var catTitle = catView.querySelector('.strip-title');
+  var catDesc = catView.querySelector('.strip-desc');
+  var cards = catView.querySelectorAll('.video-card');
+  var currentCard = document.querySelector('.page-card.current');
+  var META = {
+    music: ["MUSIC VIDEOS", "VISUALIZERS, MUSIC VIDEOS"],
+    multicam: ["MULTICAM", "LIVE SETS, MULTICAM, EVENTS"],
+    social: ["SOCIAL CONTENT", "SOCIAL, CORPORATE"]
+  };
+  catGrid.querySelectorAll('.cat-card').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var cat = btn.getAttribute('data-cat');
+      catTitle.textContent = META[cat][0];
+      catDesc.textContent = META[cat][1];
+      cards.forEach(function (c) {
+        c.style.display = (c.getAttribute('data-cat') === cat) ? '' : 'none';
+      });
+      catGrid.hidden = true;
+      catView.hidden = false;
+    });
+  });
+  catView.querySelector('.back-btn').addEventListener('click', function () {
+    catView.hidden = true;
+    catGrid.hidden = false;
+  });
+  if (currentCard) currentCard.addEventListener('click', function () {
+    catView.hidden = true;
+    catGrid.hidden = false;
+  });
+})();

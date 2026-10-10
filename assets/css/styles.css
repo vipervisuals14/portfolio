@@ -411,6 +411,24 @@ main {
 }
 .back-btn:hover { color: var(--accent); border-color: var(--accent); }
 
+/* category cards + category strip (video page) */
+.content-view .pages-grid { padding: 0 var(--gutter) var(--bottom-gap); }
+.cat-card {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+}
+.cat-view {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.cat-view[hidden] { display: none; }
+
 /* ------------------------------------------------------------
    INNER PAGES — compact hero + horizontal strips
    ------------------------------------------------------------ */
