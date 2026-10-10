@@ -180,7 +180,7 @@ a { color: inherit; text-decoration: none; }
 
 .site-menu a.menu-link {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: baseline;
   padding: 13px 4px;
   border-bottom: 1px solid var(--line-soft);
@@ -188,16 +188,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 400;
   font-size: clamp(1rem, 2.4vw, 1.4rem);
   letter-spacing: -0.015em;
-  transition: color 0.2s ease, padding-left 0.2s ease;
+  transition: color 0.2s ease, padding-right 0.2s ease;
 }
-.site-menu a.menu-link small {
-  font-family: var(--mono);
-  font-weight: 300;
-  font-size: 0.55rem;
-  letter-spacing: 0.2em;
-  color: var(--muted);
-}
-.site-menu a.menu-link:hover { color: var(--accent); padding-left: 12px; }
+.site-menu a.menu-link:hover { color: var(--accent); padding-right: 12px; }
 .site-menu a.menu-link[aria-current="page"] { color: var(--accent); }
 
 /* ------------------------------------------------------------
@@ -662,12 +655,12 @@ main {
     </div>
     <nav id="site-menu" class="site-menu" aria-label="MAIN MENU">
       <ul>
-        <li><a class="menu-link" href="index.html" aria-current="page">HOME <small>00</small></a></li>
-        <li><a class="menu-link" href="video-production.html">VIDEO PRODUCTION <small>01</small></a></li>
-        <li><a class="menu-link" href="photography.html">PHOTOGRAPHY <small>02</small></a></li>
-        <li><a class="menu-link" href="design.html">DESIGN <small>03</small></a></li>
-        <li><a class="menu-link" href="contact.html">CONTACT <small>04</small></a></li>
-        <li><a class="menu-link" href="https://www.instagram.com/thevipervisuals/" target="_blank" rel="noopener">INSTAGRAM <small>↗</small></a></li>
+        <li><a class="menu-link" href="index.html" aria-current="page">HOME </a></li>
+        <li><a class="menu-link" href="video-production.html">VIDEO PRODUCTION </a></li>
+        <li><a class="menu-link" href="photography.html">PHOTOGRAPHY </a></li>
+        <li><a class="menu-link" href="design.html">DESIGN </a></li>
+        <li><a class="menu-link" href="contact.html">CONTACT </a></li>
+        <li><a class="menu-link" href="https://www.instagram.com/thevipervisuals/" target="_blank" rel="noopener">INSTAGRAM </a></li>
       </ul>
     </nav>
   </header>
