@@ -544,8 +544,9 @@ a.back-btn { display: inline-block; }
 /* photo strip */
 .photo-tile {
   position: relative;
-  flex: 0 0 clamp(200px, 24vw, 340px);
+  flex: none;
   height: 100%;
+  aspect-ratio: 4 / 5;          /* 4x5 portrait crops */
   overflow: hidden;
   background: var(--bg-soft);
   border: 0; cursor: zoom-in; padding: 0;
@@ -681,7 +682,6 @@ a.back-btn { display: inline-block; }
    ------------------------------------------------------------ */
 @media (max-width: 980px) {
   .video-card { flex-basis: 62vw; }
-  .photo-tile { flex-basis: 40vw; }
   .design-tile { flex-basis: 62vw; }
   .contact-wrap { grid-template-columns: 1fr; overflow-y: auto; }
   .page-hero .lede { display: none; }
