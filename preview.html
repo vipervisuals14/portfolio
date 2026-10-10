@@ -238,15 +238,15 @@ main {
   transform: scale(1.04);
 }
 
-/* stacked images flipping like a GIF (design card) */
+/* stacked images flipping like a GIF (design card) — rapid fire */
 .card-media.stack img {
   position: absolute; inset: 0;
   opacity: 0;
-  animation: flip 6s linear infinite;
+  animation: flip 1.2s linear infinite;
 }
 .card-media.stack img:nth-of-type(1) { animation-delay: 0s; }
-.card-media.stack img:nth-of-type(2) { animation-delay: 2s; }
-.card-media.stack img:nth-of-type(3) { animation-delay: 4s; }
+.card-media.stack img:nth-of-type(2) { animation-delay: 0.4s; }
+.card-media.stack img:nth-of-type(3) { animation-delay: 0.8s; }
 @keyframes flip {
   0%, 33.32%   { opacity: 1; }
   33.33%, 100% { opacity: 0; }
