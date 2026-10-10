@@ -8,7 +8,7 @@
   <link rel="icon" type="image/gif" href="https://cdn.myportfolio.com/9844ffef-896f-4abd-b0bc-bec392563aaf/4862593e-65ee-498d-8f15-ce9776c79be1_rwc_208x220x638x638x4096.gif?h=65514d942333bce1de5e08b469adcd14">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&family=Azeret+Mono:wght@200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&family=Azeret+Mono:wght@200;300;400&family=Instrument+Serif&display=swap" rel="stylesheet">
   <style>
 /* ============================================================
    VIPER VISUALS — GLOBAL STYLESHEET
@@ -31,6 +31,7 @@
   --dot: #2ee56b;                 /* "online" green */
   --dot-glow: rgba(46, 229, 107, 0.55);
   --sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
   --mono: "Azeret Mono", "SFMono-Regular", Menlo, Consolas, monospace;
   --gutter: clamp(18px, 2vw, 28px);
   --header-h: clamp(64px, 8vh, 92px);
@@ -119,11 +120,11 @@ a { color: inherit; text-decoration: none; }
 /* brand name, dead centre */
 .brand-name {
   justify-self: center;
-  font-weight: 900;
-  font-size: clamp(1.15rem, 2.4vw, 1.9rem);
-  letter-spacing: 0.24em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.3rem, 2.8vw, 2.2rem);
+  letter-spacing: -0.015em;
   white-space: nowrap;
-  text-indent: 0.24em;
   transition: color 0.25s ease;
 }
 .brand-name:hover { color: var(--accent); }
@@ -261,9 +262,10 @@ main {
   left: 0; right: 0; top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  font-weight: 800;
-  font-size: clamp(1.05rem, 2.1vw, 2rem);
-  letter-spacing: -0.03em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.3rem, 2.6vw, 2.5rem);
+  letter-spacing: -0.015em;
   line-height: 1.1;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
   pointer-events: none;
@@ -387,9 +389,10 @@ main {
   margin-bottom: 8px;
 }
 .page-hero h1 {
-  font-weight: 900;
-  font-size: clamp(1.4rem, 3.2vw, 2.6rem);
-  letter-spacing: -0.02em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3.8vw, 3.1rem);
+  letter-spacing: -0.015em;
   line-height: 1.02;
 }
 .page-hero .lede {
@@ -499,9 +502,10 @@ main {
   padding: 20px;
 }
 .design-tile.type-tile strong {
-  font-weight: 900;
-  font-size: clamp(1.2rem, 2.2vw, 2rem);
-  letter-spacing: 0.06em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.6vw, 2.4rem);
+  letter-spacing: -0.015em;
 }
 .design-tile.type-tile span {
   display: block;
@@ -618,7 +622,6 @@ main {
   .pages-grid { display: flex; overflow-x: auto; overflow-y: hidden; }
   .page-card { flex: 0 0 78vw; }
   .status-bar { flex-direction: column; align-items: center; gap: 10px; padding: 12px var(--gutter); }
-  .brand-name { letter-spacing: 0.16em; text-indent: 0.16em; }
 }
 
 </style>
