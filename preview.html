@@ -251,6 +251,18 @@ main {
   pointer-events: none;
 }
 
+/* black title for light-background images */
+.card-title.on-light {
+  color: #000;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
+}
+/* when the image inverts on hover, flip the title back to white */
+.page-card:hover .card-title.on-light,
+.page-card:focus-visible .card-title.on-light {
+  color: #fff;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+}
+
 /* description under the box — Azeret Mono, light */
 .card-desc {
   margin-top: clamp(10px, 1.6vh, 16px);
@@ -643,8 +655,8 @@ main {
 
       <a class="page-card reveal" href="photography.html">
         <span class="card-media">
-          <img src="https://cdn.myportfolio.com/9844ffef-896f-4abd-b0bc-bec392563aaf/88ffd44c-59e9-4d77-820a-69c8188591af_rw_1920.jpg?h=da600528a823bccb3d86672846db671d" alt="PHOTOGRAPHY — PRESS, CONCERTS, CORPORATE" loading="eager" referrerpolicy="no-referrer">
-          <h2 class="card-title">PHOTOGRAPHY</h2>
+          <img src="https://cdn.myportfolio.com/9844ffef-896f-4abd-b0bc-bec392563aaf/80662403-5e3b-4675-8388-42925cc19fa2_rw_1200.jpg?h=569a7ff99006b817c26c7671c16d99c1" alt="PHOTOGRAPHY — PRESS, CONCERTS, CORPORATE" loading="eager" referrerpolicy="no-referrer">
+          <h2 class="card-title on-light">PHOTOGRAPHY</h2>
         </span>
         <p class="card-desc">PRESS, CONCERTS, CORPORATE</p>
       </a>

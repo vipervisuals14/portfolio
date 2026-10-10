@@ -239,6 +239,18 @@ main {
   pointer-events: none;
 }
 
+/* black title for light-background images */
+.card-title.on-light {
+  color: #000;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
+}
+/* when the image inverts on hover, flip the title back to white */
+.page-card:hover .card-title.on-light,
+.page-card:focus-visible .card-title.on-light {
+  color: #fff;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+}
+
 /* description under the box — Azeret Mono, light */
 .card-desc {
   margin-top: clamp(10px, 1.6vh, 16px);
