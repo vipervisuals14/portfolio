@@ -1,6 +1,7 @@
 /* ============================================================
    VIPER VISUALS — GLOBAL STYLESHEET
-   Fonts: Inter (headers / page text — ALL CAPS, heavy)
+   Fonts: Instrument Serif (brand + page headers + menu)
+          Inter (body / UI text — ALL CAPS)
           Azeret Mono (descriptions — light)
    Layout: fixed viewport, NO vertical scroll.
            Header + status bar pinned by flex column;
@@ -115,8 +116,7 @@ a { color: inherit; text-decoration: none; }
 /* brand name, left beside the logo */
 .brand-name {
   font-family: var(--serif);
-  font-weight: 700;
-  -webkit-text-stroke: 0.4px currentColor;
+  font-weight: 400;
   font-size: clamp(1.3rem, 2.8vw, 2.2rem);
   letter-spacing: -0.015em;
   white-space: nowrap;
@@ -172,9 +172,10 @@ a { color: inherit; text-decoration: none; }
   align-items: baseline;
   padding: 13px 4px;
   border-bottom: 1px solid var(--line-soft);
-  font-weight: 800;
+  font-family: var(--serif);
+  font-weight: 400;
   font-size: clamp(1rem, 2.4vw, 1.4rem);
-  letter-spacing: 0.14em;
+  letter-spacing: -0.015em;
   transition: color 0.2s ease, padding-left 0.2s ease;
 }
 .site-menu a.menu-link small {
