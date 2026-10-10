@@ -150,3 +150,21 @@
     });
   }
 })();
+
+/* inner pages: the current homepage card opens its content strip */
+(function () {
+  var currentCard = document.querySelector('.page-card.current');
+  var grid = document.querySelector('.pages-grid');
+  var view = document.querySelector('.content-view');
+  if (!currentCard || !grid || !view) return;
+  currentCard.addEventListener('click', function (e) {
+    e.preventDefault();
+    grid.hidden = true;
+    view.hidden = false;
+  });
+  var back = view.querySelector('.back-btn');
+  if (back) back.addEventListener('click', function () {
+    view.hidden = true;
+    grid.hidden = false;
+  });
+})();
